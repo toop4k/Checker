@@ -3,6 +3,7 @@
 
 /*Vamos a cambiar nuestro estilo de letra por uno monoespaciado
 lo vamos a jalar del que tenemos descargado en la carpeta fonts*/
+
 @font-face {
   font-family: 'unispace';
   src: url('assets/fonts/unispace bd.otf');
@@ -15,6 +16,7 @@ lo vamos a jalar del que tenemos descargado en la carpeta fonts*/
   font-family: 'unispace3';
   src: url('assets/fonts/unispace rg.otf');
 }
+
 
 
 
