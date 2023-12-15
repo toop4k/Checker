@@ -1,29 +1,63 @@
+/* Estilos generales para el contenedor principal */
+/* Se redujo el margen superior 
+ Se añadió un borde 
+ Se añadió un borde redondeado */
 .content {
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  margin: 40px auto; 
+  padding: 16px;
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 table,
 .mat-form-field {
-  width: 90%;
+  width: 100%; 
 }
 
+/* Estilos para los botones de icono Material */
+/* Se aumentó la altura 
+ Se aumentó el ancho */
 .mat-icon-button {
-  height: 32px;
-  width: 32px;
+  height: 40px; 
+  width: 40px; 
   line-height: inherit;
 }
 
+
 th.mat-header-cell:first-of-type,
 .mat-cell {
-  padding: 8px !important;
+  padding: 12px !important; /* Mas padding */
 }
 
+/* Boton de agregar */
+/*
+Se redujo el ancho 
+Se aumentó el margen superior
+Se cambió el color de fondo a verde
+Se cambió el color del texto a blanco
+Se eliminó el borde
+Se ajustó el padding
+Se añadió un borde redondeado
+Se añadió un cursor de puntero
+Se añadió una transición
+*/
 .add-btn {
-  width: 100%;
-  margin-top: 0.5em;
+  width: 80%; 
+  margin-top: 1em; 
+  background-color: #4caf50; 
+  color: #fff; 
+  border: none; 
+  padding: 10px; 
+  border-radius: 4px;  
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+/* Se cambió el color de fondo al pasar el ratón */
+.add-btn:hover {
+  background-color: #45a049; 
 }
