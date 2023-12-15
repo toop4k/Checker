@@ -1,34 +1,47 @@
+/* Estilos para la barra de herramientas */
+/* Ajustado para que no esté pegado en el borde superior 
+ Se añadió un color de fondo azul 
+ Se cambió el color del texto a blanco 
+ Se añadió una sombra ligera */
 .toolbar {
   position: absolute;
-  top: 0;
+  top: 20px; 
   left: 0;
   right: 0;
   height: 60px;
   display: flex;
   align-items: center;
   font-weight: 600;
+  background-color: #4a9608; 
+  color: #fff; 
+  padding: 0 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
+
 
 .toolbar img {
-  margin: 0 16px;
+  margin-right: 16px; /* Se cambió el margen para ajustar */
 }
 
+/* Estilos para el espacio flexible en la barra de herramientas */
 .spacer {
   flex: 1;
 }
 
-.edit {
-  margin: 0 8px;
-}
-
-.title {
-  font-size: 1.5em;
-  padding: 0 16px;
-}
-
+/* Estilos para el enlace en la barra de herramientas */
 a {
-  color: inherit;
+  color: #fff; 
   text-decoration: none;
   font-size: 1.25em;
   padding-left: 16px;
+}
+
+/* Estilos para el botón de edición en la barra de herramientas */
+.edit {
+  margin: 0 16px; 
+}
+
+/* Estilos para el título en la barra de herramientas */
+.title {
+  font-size: 1.5em;
 }
