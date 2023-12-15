@@ -30,7 +30,7 @@
 .points {
   margin: 0 1.5em;
   font-size: large;
-  color: #ff4081;
+  color: #bfff40;
 }
 
 .points mat-icon {
@@ -40,7 +40,7 @@
 
 .suffix {
   float: right;
-  color: #ff4081;
+  color: #1eea04;
 }
 
 .action-btns {
