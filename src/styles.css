@@ -20,9 +20,9 @@ lo vamos a jalar del que tenemos descargado en la carpeta fonts*/
 
 html,
 body {
-  height: 100%;
+  height: 80%;
 }
 body {
   margin: 0;
-  font-family: unispace, "Helvetica Neue", sans-serif;
+  font-family: unispace, "Helvetica Neu", sans-serif;
 }
