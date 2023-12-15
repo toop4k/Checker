@@ -1,15 +1,17 @@
+
 h1 {
-  padding: 0.5em;
+  padding: 1em; /* padding */
 }
 
 table,
 .mat-form-field {
-  width: 90%;
+  width: 100%; 
 }
 
+/* Estilos para los botones de icono Material */
 .mat-icon-button {
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
   line-height: inherit;
 }
 
@@ -21,27 +23,23 @@ table,
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.5em;
-  line-height: 16px;
+  padding: 1em; 
+  line-height: 24px; 
   min-width: auto;
 }
 
-::ng-deep
-  .advanced-pie-legend
-  ::ng-deep
-  .legend-items-container
-  ::ng-deep
-  .legend-items
-  ::ng-deep
-  .legend-item
-  ::ng-deep
-  .item-value {
-  margin-top: 10px !important;
+/* Estilos para los elementos dentro de la leyenda avanzada */
+::ng-deep .advanced-pie-legend ::ng-deep .legend-items-container ::ng-deep .legend-items ::ng-deep .legend-item ::ng-deep .item-value {
+  margin-top: 20px !important; 
 }
 
+/* Estilos para el contenedor del diálogo Material */
 ::ng-deep .mat-dialog-container {
-  padding: 0;
+  padding: 1em; 
 }
+
+
+
 /* 
 ::ng-deep .advanced-pie-legend-wrapper {
   display: block !important;

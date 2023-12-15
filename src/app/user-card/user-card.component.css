@@ -1,6 +1,10 @@
+/* Estilos para tarjetas Material */
 .mat-card {
   display: grid;
   min-width: 280px;
+  padding: 1em; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 ::ng-deep .mat-card-header-text {
@@ -11,16 +15,20 @@
   text-overflow: ellipsis;
 }
 
+
 .points-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1em;
 }
+
 
 .buttons-container {
   display: flex;
   justify-content: center;
   column-gap: 1em;
+  margin-top: 1em; 
 }
 
 .buttons-container button {
@@ -31,10 +39,12 @@
   margin: 0 1.5em;
   font-size: large;
   color: #bfff40;
+  display: flex; 
+  align-items: center; 
 }
 
 .points mat-icon {
-  vertical-align: text-bottom;
+  vertical-align: middle; 
   padding-left: 0.25em;
 }
 
@@ -45,6 +55,6 @@
 
 .action-btns {
   position: absolute;
-  top: 0.5em;
+  top: 1em; 
   right: 1em;
 }
