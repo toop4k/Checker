@@ -45,17 +45,20 @@ Se añadió un borde redondeado
 Se añadió un cursor de puntero
 Se añadió una transición
 */
+
 .add-btn {
-  width: 80%; 
-  margin-top: 1em; 
-  background-color: #4caf50; 
-  color: #fff; 
-  border: none; 
-  padding: 10px; 
-  border-radius: 4px;  
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  width: 80%;
+  margin-top: 1em;
+  margin-left: 10%; 
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
 
 /* Se cambió el color de fondo al pasar el ratón */
 .add-btn:hover {
