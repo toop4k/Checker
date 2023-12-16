@@ -13,12 +13,19 @@ body {
   
   .title {
     color: #333;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   
   h2 {
-    color: #333;
+    color: #116c31;
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px;
+    margin-bottom: 10px; /* Añade un margen inferior */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
   }
+  
   
   ul {
     list-style-type: none;
@@ -33,10 +40,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 900px;  /* Ajusta el valor según tus necesidades */
+    margin-left: auto; /* Centra el elemento dentro de su contenedor */
+    margin-right: auto; /* Centra el elemento dentro de su contenedor */
   }
   
   .badge {
-    background-color: #333;
+    background-color: #0d780f;
     color: #fff;
     padding: 5px 10px;
     border-radius: 3px;
