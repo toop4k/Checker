@@ -45,6 +45,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { UserActivitiesDialogComponent } from './user-activities-dialog/user-activities-dialog.component';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
+import { AlumniComponent } from './alumni/alumni.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
     ConfigureItemsComponent,
     ConfirmDialogComponent,
     UserActivitiesDialogComponent,
+    AlumniComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,9 +5,14 @@ import { LoginComponent } from './login/login.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ConfigureItemsComponent } from './configure-items/configure-items.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { AlumniComponent } from './alumni/alumni.component';
 
 
 const routes: Routes = [
+  {
+    path: 'alumni',
+    component: AlumniComponent,
+  },
   {
     path: 'begin',
     component: ToolbarComponent,
