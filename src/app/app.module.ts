@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +25,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { LoginComponent } from './login/login.component';
+
 
 import {
   UserCardComponent,
@@ -44,6 +48,7 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
 
 @NgModule({
   declarations: [
+    LoginComponent,
     AppComponent,
     UserCardComponent,
     UserListComponent,
@@ -60,6 +65,9 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatGridListModule,
@@ -69,7 +77,6 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
     MatIconModule,
     MatSelectModule,
     MatSlideToggleModule,
-    FormsModule,
     ReactiveFormsModule,
     MatDialogModule,
     MatMenuModule,
