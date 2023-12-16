@@ -3,9 +3,9 @@
  Se añadió un color de fondo azul 
  Se cambió el color del texto a blanco 
  Se añadió una sombra ligera */
-.toolbar {
+ .toolbar {
   position: absolute;
-  top: 20px; 
+  top: 0px;  /* Ajusta este valor según sea necesario */
   left: 0;
   right: 0;
   height: 60px;
