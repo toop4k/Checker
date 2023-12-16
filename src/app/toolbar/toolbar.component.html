@@ -1,5 +1,5 @@
 <mat-toolbar role="banner" class="toolbar" color="primary">
-  <a [routerLink]="['/']">
+  <a [routerLink]="['/begin']">
     <span>Point Tracker</span>
   </a>
   <div class="spacer"></div>
@@ -17,6 +17,6 @@
     <mat-icon>settings</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item [routerLink]="['/items']">Configure Items</button>
+    <button mat-menu-item [routerLink]="['/config']">Configure Items</button>
   </mat-menu>
 </mat-toolbar>

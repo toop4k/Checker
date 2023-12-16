@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { Us, US } from '../interface/us';
 import { Item } from '../shared/Item';
+import { encrypt } from '../util/util-encrypt';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -22,12 +23,13 @@ export class LoginComponent {
       Item => Item.us == usRequest
     );
     
+    console.log(encrypt(passRequest));
+
      // @ts-ignore
-    if (usOpt.length>0 && (usOpt.at(0).pass)==passRequest) {
+    if (usOpt.length>0 && (usOpt.at(0).pass)==encrypt(passRequest)) {
       
       this.router.navigate(['/begin']);
     } else {
-    
       console.error('Por favor, ingresa un nombre de usuario y una contraseña.');
     }
   }

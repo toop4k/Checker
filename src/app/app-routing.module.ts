@@ -3,11 +3,22 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ConfigureItemsComponent } from './configure-items/configure-items.component';
+import { UserListComponent } from './user-list/user-list.component';
+
 
 const routes: Routes = [
   {
     path: 'begin',
     component: ToolbarComponent,
+  },
+  {
+    path: 'userlist',
+    component: UserListComponent,
+  },
+  {
+    path: 'config',
+    component: ConfigureItemsComponent,
   },
   {
     path: 'login',
