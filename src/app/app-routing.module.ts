@@ -14,7 +14,7 @@ const routes: Routes = [
     component: AlumniComponent,
   },
   {
-    path: 'begin',
+    path: 'begin/:nameLogin',
     component: ToolbarComponent,
   },
   {

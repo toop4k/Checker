@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,13 +9,18 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class ToolbarComponent implements OnInit {
   title = 'point-tracker';
   color = 'color';
+
+  nameLogin: string;
+
   edit: boolean = false;
   @Output() editChange = new EventEmitter<boolean>();
   disabled = false;
 
-  constructor() {}
+  constructor(private route: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.nameLogin = this.route.snapshot.params['nameLogin'];
+  }
 
   toggleEdit() {
     this.editChange.emit(!this.edit);

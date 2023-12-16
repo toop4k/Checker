@@ -7,7 +7,8 @@ import { encrypt } from '../util/util-encrypt';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+
 })
 export class LoginComponent {
   username: string = '';
@@ -17,10 +18,10 @@ export class LoginComponent {
 
   constructor(private router: Router) {}
 
-  onSubmit(usRequest: string, passRequest: string): void {
+  onSubmit(nameLogin: string, passRequest: string): void {
     // @ts-ignore
     let usOpt :Us[] = this.validationUsList.filter(
-      Item => Item.us == usRequest
+      Item => Item.us == nameLogin
     );
     
     console.log(encrypt(passRequest));
@@ -28,7 +29,7 @@ export class LoginComponent {
      // @ts-ignore
     if (usOpt.length>0 && (usOpt.at(0).pass)==encrypt(passRequest)) {
       
-      this.router.navigate(['/begin']);
+      this.router.navigate(['/begin',nameLogin]);
     } else {
       console.error('Por favor, ingresa un nombre de usuario y una contraseña.');
     }

@@ -4,9 +4,9 @@ export interface Al {
 }
 
 export const AL:Al[] = [
-    {nombre:'Richard', puntos:80,},
+    {nombre:'Richard', puntos:90,},
     {nombre:'Hammed', puntos:70,},
-    {nombre:'Pablo', puntos:90,},
+    {nombre:'Pablo', puntos:80,},
     {nombre:'Sergio', puntos:70,},
     {nombre:'Pancho', puntos:80,},
 ]
