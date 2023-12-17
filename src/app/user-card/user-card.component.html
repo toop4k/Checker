@@ -9,10 +9,10 @@
     <div fxFlex></div>
     <div *ngIf="edit" class="action-btns">
       <button mat-icon-button color="primary" (click)="editUser(user)">
-        <mat-icon>edit</mat-icon>
+        <mat-icon>editar</mat-icon>
       </button>
       <button mat-icon-button color="warn" (click)="deleteUser(user.id)">
-        <mat-icon>delete</mat-icon>
+        <mat-icon>borrar</mat-icon>
       </button>
     </div>
   </mat-card-header>
@@ -22,7 +22,7 @@
       -
     </button>
     <button mat-button class="points" (click)="getActivitiesByUser(user.id)">
-      {{ point }} points<mat-icon>info</mat-icon>
+      {{ point }} puntos<mat-icon>info</mat-icon>
     </button>
     <button *ngIf="edit" mat-mini-fab color="primary" (click)="incPoint()">
       +
@@ -32,7 +32,7 @@
   <!-- Lose points dropdown -->
   <div class="buttons-container">
     <mat-form-field appearance="fill">
-      <mat-label>Lose points</mat-label>
+      <mat-label>Perder puntos</mat-label>
       <mat-select
         multiple
         [(ngModel)]="selectedLoseItems"
@@ -55,14 +55,14 @@
         !edit || !this.selectedLoseItems || this.selectedLoseItems.length == 0
       "
     >
-      Lose
+      Perder
     </button>
   </div>
 
   <!-- Earn points dropdown -->
   <div class="buttons-container">
     <mat-form-field appearance="fill">
-      <mat-label>Earn points</mat-label>
+      <mat-label>Ganar puntos</mat-label>
       <mat-select
         [(ngModel)]="selectedEarnItems"
         [compareWith]="comparer"
@@ -85,14 +85,14 @@
         !edit || !this.selectedEarnItems || this.selectedEarnItems.length == 0
       "
     >
-      Earn
+      Ganar
     </button>
   </div>
 
   <!-- Spend points dropdown -->
   <div class="buttons-container">
     <mat-form-field appearance="fill">
-      <mat-label>Spend points</mat-label>
+      <mat-label>Gastar puntos</mat-label>
       <mat-select
         multiple
         [(ngModel)]="selectedSpendItems"
@@ -115,7 +115,7 @@
         !edit || !this.selectedSpendItems || this.selectedSpendItems.length == 0
       "
     >
-      Spend
+      Gastar
     </button>
   </div>
 </mat-card>

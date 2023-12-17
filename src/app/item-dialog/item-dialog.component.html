@@ -2,7 +2,7 @@
 <div mat-dialog-content>
   <form [formGroup]="itemForm">
     <mat-form-field hintLabel="Max 24 characters" appearance="outline">
-      <mat-label>Description</mat-label>
+      <mat-label>Descripcion</mat-label>
       <input
         matInput
         formControlName="desc"
@@ -15,7 +15,7 @@
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <mat-label>Points</mat-label>
+      <mat-label>Puntos</mat-label>
       <input
         matInput
         formControlName="points"
@@ -27,7 +27,7 @@
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <mat-label>Users</mat-label>
+      <mat-label>Alumnos</mat-label>
       <mat-select formControlName="users" multiple>
         <mat-option *ngFor="let user of data.users" [value]="user.id">
           {{ user.id }}
@@ -37,7 +37,7 @@
   </form>
 </div>
 <div mat-dialog-actions [align]="'end'">
-  <button mat-stroked-button color="accent" mat-dialog-close>Cancel</button>
+  <button mat-stroked-button color="accent" mat-dialog-close>Cancelar</button>
 
   <button
     [disabled]="itemForm.invalid"
@@ -45,6 +45,6 @@
     color="accent"
     (click)="saveItem()"
   >
-    Save
+    Guardar
   </button>
 </div>

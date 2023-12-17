@@ -1,6 +1,6 @@
 <mat-toolbar role="banner" class="toolbar" color="primary">
   <a >
-    <span>Point Tracker  {{nameLogin}} </span>
+    <span>Trackeador de puntos  {{nameLogin}} </span>
   </a>
 
 
@@ -13,13 +13,13 @@
     [disabled]="disabled"
     (click)="toggleEdit()"
   >
-    Edit
+    Editar
   </mat-slide-toggle>
   <button mat-button [matMenuTriggerFor]="menu">
     <mat-icon>settings</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item [routerLink]="['/config']">Configure Items</button>
+    <button mat-menu-item [routerLink]="['/config']">Configurar Items</button>
     <button mat-menu-item [routerLink]="['/alumni']">Alumni</button>
     <button mat-menu-item [routerLink]="['/login']">Cerrar sesion </button>
   </mat-menu>
